@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=KDE/Stellarbox
+Comment=Use the Stellarbox window manager inside of the K Desktop Environment
+Exec=@bindir@/stellarbox-kde-session
+TryExec=startkde
+Icon=stellarbox
+Type=Application

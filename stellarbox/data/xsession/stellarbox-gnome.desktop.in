@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=GNOME/Stellarbox
+Comment=Use the Stellarbox window manager inside of the GNOME desktop environment
+Exec=@bindir@/stellarbox-gnome-session
+TryExec=gnome-session
+Icon=stellarbox
+Type=Application

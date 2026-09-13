@@ -1,0 +1,22 @@
+#!/bin/sh
+
+if test -n "$1"; then
+    echo "Syntax: stellarbox-session"
+    echo
+    echo "See the stellarbox-session(1) manpage for help."
+  exit
+fi
+
+# Clean up after GDM
+xprop -root -remove _NET_NUMBER_OF_DESKTOPS \
+      -remove _NET_DESKTOP_NAMES \
+      -remove _NET_CURRENT_DESKTOP 2> /dev/null
+
+# Set up the environment
+A="@configdir@/stellarbox/environment"
+test -r $A && . $A
+A="${XDG_CONFIG_HOME:-"$HOME/.config"}/stellarbox/environment"
+test -r $A && . $A
+
+# Run Stellarbox, and have it run the autostart stuff
+exec @bindir@/stellarbox --startup "@libexecdir@/stellarbox-autostart STELLARBOX" "$@"

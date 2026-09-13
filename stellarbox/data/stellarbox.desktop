@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Name=Stellarbox
+Exec=stellarbox
+Icon=stellarbox
+NoDisplay=true
+# name we put on the WM spec check window
+X-GNOME-WMName=Stellarbox
+# gnome-session autostart
+X-GNOME-Autostart-Phase=WindowManager
+X-GNOME-Provides=windowmanager
+# Ubuntu stuff
+X-Ubuntu-Gettext-Domain=stellarbox
+# back compat
+X-GNOME-Autostart-Notify=true

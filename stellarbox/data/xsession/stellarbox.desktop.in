@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Stellarbox
+Comment=Log in using the Stellarbox window manager (without a session manager)
+Exec=@bindir@/stellarbox-session
+TryExec=@bindir@/stellarbox-session
+Icon=stellarbox
+Type=Application
