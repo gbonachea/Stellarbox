@@ -1,0 +1,41 @@
+#
+# These things are run when an Stellarbox X Session is started.
+# You may place a similar script in $HOME/.config/stellarbox/autostart
+# to run user-specific things.
+#
+
+# If you want to use GNOME config tools...
+#
+#if test -x /usr/lib/stellarbox/gnome-settings-daemon >/dev/null; then
+#  /usr/lib/stellarbox/gnome-settings-daemon &
+#elif which gnome-settings-daemon >/dev/null; then
+#  gnome-settings-daemon &
+#fi
+
+# If you want to use XFCE config tools...
+#
+#xfce-mcs-manager &
+
+# Agent de autenticación PolicyKit: necesario para que programas que usan
+# pkexec (p.ej. Synaptic) puedan mostrar el diálogo de contraseña.
+# Se prueba la lista de agentes conocidos y se lanza el primero que exista.
+for _sb_polkit_agent in \
+        /usr/libexec/polkit-mate-authentication-agent-1 \
+        /usr/lib/lxqt-policykit/lxqt-policykit-agent \
+        /usr/lib/xfce-polkit/xfce-polkit \
+        /usr/libexec/polkit-gnome-authentication-agent-1; do
+    if [ -x "$_sb_polkit_agent" ]; then
+        "$_sb_polkit_agent" &
+        break
+    fi
+done
+unset _sb_polkit_agent
+
+# Escritorio de stellarbox (fondo + iconos de ~/Desktop): se arranca si el
+# paquete stellarbox-desktop está instalado. Se puede desactivar poniendo
+# STELLARBOX_DESKTOP=0 antes de iniciar la sesión.
+if [ "${STELLARBOX_DESKTOP:-1}" = "1" ]; then
+    if command -v stellarbox-desktop >/dev/null 2>&1; then
+        stellarbox-desktop &
+    fi
+fi

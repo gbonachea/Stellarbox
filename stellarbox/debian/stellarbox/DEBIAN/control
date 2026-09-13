@@ -1,0 +1,14 @@
+Package: stellarbox
+Version: 1.0-1
+Architecture: amd64
+Maintainer: Stellarbox CMake fork <nobody@localhost>
+Installed-Size: 1105
+Depends: libc6 (>= 2.34), libcairo2 (>= 1.2.4), libglib2.0-0t64 (>= 2.36.0), libpango-1.0-0 (>= 1.22.0), libpangocairo-1.0-0 (>= 1.14.0), libx11-6, libxext6, libxft2 (>> 2.1.1), libxml2 (>= 2.7.4), libxrandr2, python3, picom, polybar | tint2, rofi | dmenu, feh | nitrogen, dunst, x11-xserver-utils, dbus-x11, mate-polkit | polkit-gnome | lxqt-policykit | xfce-polkit, stellarbox-obconf (>= 0.16.6)
+Provides: x-session-manager, x-window-manager
+Section: x11
+Priority: optional
+Description: A minimalistic, highly configurable X11 window manager
+ Stellarbox (formerly Openbox) is a lightweight, highly configurable X11
+ window manager with extensive standards support (EWMH/ICCCM), built from
+ the CMake-customized fork with vector (Cairo) rendering, rounded corners,
+ HiDPI support and _NET_WM_OPAQUE_REGION.
