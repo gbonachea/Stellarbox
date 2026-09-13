@@ -1,0 +1,34 @@
+#!/bin/sh
+#
+# stellarbox-session - arranque de la sesión Stellarbox.
+# Se instala en /usr/bin/stellarbox-session y se invoca desde
+# /usr/share/xsessions/stellarbox.desktop por el Display Manager.
+#
+
+# limpieza tras GDM: quitar escritorios residuales
+xprop -root -remove _NET_NUMBER_OF_DESKTOPS \
+      -remove _NET_DESKTOP_NAMES \
+      -remove _NET_CURRENT_DESKTOP 2>/dev/null || true
+
+# cargar los recursos X del usuario (xrdb)
+if [ -f "$HOME/.Xresources" ]; then
+    xrdb -merge "$HOME/.Xresources" 2>/dev/null || true
+fi
+
+# lanzar el compositor en segundo plano
+picom -b 2>/dev/null || true
+
+# entorno de sistema y de usuario
+A=/etc/xdg/stellarbox/environment
+[ -r "$A" ] && . "$A"
+A="${XDG_CONFIG_HOME:-$HOME/.config}/stellarbox/environment"
+[ -r "$A" ] && . "$A"
+
+# scripts de autostart del sistema y del usuario
+A=/etc/xdg/stellarbox/autostart
+[ -r "$A" ] && . "$A"
+A="${XDG_CONFIG_HOME:-$HOME/.config}/stellarbox/autostart"
+[ -r "$A" ] && . "$A"
+
+# arrancar el gestor de ventanas en primer plano
+exec stellarbox "$@"

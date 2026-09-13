@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib/x86_64-linux-gnu
+includedir=${prefix}/include
+
+Name: ObRender
+Description: Stellarbox Render Library
+Version: 3.6.33
+Requires: obt-3.5 x11 xext xcb xrandr xrender xft glib-2.0 libxml-2.0 cairo pango pangocairo pangoxft
+Libs: -L${libdir} -lobrender
+Cflags: -I${includedir}/openbox
