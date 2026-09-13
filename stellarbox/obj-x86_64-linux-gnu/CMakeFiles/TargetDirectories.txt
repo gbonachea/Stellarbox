@@ -1,0 +1,9 @@
+/home/gus/Downloads/Proyect/Openbox/obj-x86_64-linux-gnu/CMakeFiles/obrender.dir
+/home/gus/Downloads/Proyect/Openbox/obj-x86_64-linux-gnu/CMakeFiles/obt.dir
+/home/gus/Downloads/Proyect/Openbox/obj-x86_64-linux-gnu/CMakeFiles/stellarbox.dir
+/home/gus/Downloads/Proyect/Openbox/obj-x86_64-linux-gnu/CMakeFiles/edit_cache.dir
+/home/gus/Downloads/Proyect/Openbox/obj-x86_64-linux-gnu/CMakeFiles/rebuild_cache.dir
+/home/gus/Downloads/Proyect/Openbox/obj-x86_64-linux-gnu/CMakeFiles/list_install_components.dir
+/home/gus/Downloads/Proyect/Openbox/obj-x86_64-linux-gnu/CMakeFiles/install.dir
+/home/gus/Downloads/Proyect/Openbox/obj-x86_64-linux-gnu/CMakeFiles/install/local.dir
+/home/gus/Downloads/Proyect/Openbox/obj-x86_64-linux-gnu/CMakeFiles/install/strip.dir
