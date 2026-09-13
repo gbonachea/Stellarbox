@@ -1,0 +1,3 @@
+/usr/bin/stellarbox-desktop
+/usr/share/stellarbox/backgrounds/default.png
+/usr/share/applications/stellarbox-desktop.desktop

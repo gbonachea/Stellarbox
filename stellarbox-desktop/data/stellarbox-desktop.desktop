@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Stellarbox Desktop
+GenericName=Desktop
+Comment=Wallpaper and desktop icons for Stellarbox
+Comment[pt_BR]=Fundo de tela e ícones da área de trabalho do Stellarbox
+Exec=stellarbox-desktop
+Icon=preferences-desktop-wallpaper
+Terminal=false
+Categories=System;DesktopSettings;
+NoDisplay=true
+X-GNOME-Autostart-enabled=false

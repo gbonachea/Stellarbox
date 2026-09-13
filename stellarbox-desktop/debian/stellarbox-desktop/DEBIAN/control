@@ -1,0 +1,17 @@
+Package: stellarbox-desktop
+Version: 0.1.0
+Architecture: amd64
+Maintainer: Stellarbox <nobody@localhost>
+Installed-Size: 962
+Depends: libc6 (>= 2.34), libcairo2 (>= 1.2.4), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.22.0), libgtk-3-0t64 (>= 3.21.5)
+Section: x11
+Priority: optional
+Description: Escritorio independiente para Stellarbox (fondo + iconos)
+ Escritorio de Stellarbox: fondo de pantalla e iconos de ~/Desktop sobre
+ cada monitor. No depende de ningun gestor de archivos concreto, por lo
+ que se complementa con stellarbox o cualquier gestor de ventanas y con
+ cualquier gestor de archivos.
+ .
+ El fondo se configura en ~/.config/stellarbox/wallpaper (ruta absoluta)
+ o, si el archivo no existe, se usa la primera imagen de
+ /usr/share/stellarbox/backgrounds y, en su defecto, un degradado neutro.

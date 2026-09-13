@@ -1,0 +1,20 @@
+Source: stellarbox-desktop
+Section: x11
+Priority: optional
+Maintainer: Stellarbox <nobody@localhost>
+Build-Depends: debhelper-compat (= 13), cmake, pkg-config, libgtk-3-dev
+Standards-Version: 4.6.2
+Rules-Requires-Root: no
+
+Package: stellarbox-desktop
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Escritorio independiente para Stellarbox (fondo + iconos)
+ Escritorio de Stellarbox: fondo de pantalla e iconos de ~/Desktop sobre
+ cada monitor. No depende de ningun gestor de archivos concreto, por lo
+ que se complementa con stellarbox o cualquier gestor de ventanas y con
+ cualquier gestor de archivos.
+ .
+ El fondo se configura en ~/.config/stellarbox/wallpaper (ruta absoluta)
+ o, si el archivo no existe, se usa la primera imagen de
+ /usr/share/stellarbox/backgrounds y, en su defecto, un degradado neutro.
