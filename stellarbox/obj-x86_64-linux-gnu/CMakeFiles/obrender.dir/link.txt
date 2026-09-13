@@ -1,0 +1,2 @@
+/usr/bin/ar qc libobrender.a CMakeFiles/obrender.dir/obrender/button.c.o CMakeFiles/obrender.dir/obrender/color.c.o CMakeFiles/obrender.dir/obrender/font.c.o CMakeFiles/obrender.dir/obrender/gradient.c.o CMakeFiles/obrender.dir/obrender/image.c.o CMakeFiles/obrender.dir/obrender/imagecache.c.o CMakeFiles/obrender.dir/obrender/instance.c.o CMakeFiles/obrender.dir/obrender/mask.c.o CMakeFiles/obrender.dir/obrender/render.c.o CMakeFiles/obrender.dir/obrender/theme.c.o
+/usr/bin/ranlib libobrender.a

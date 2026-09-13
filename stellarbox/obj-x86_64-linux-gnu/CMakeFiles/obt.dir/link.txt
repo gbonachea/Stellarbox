@@ -1,0 +1,2 @@
+/usr/bin/ar qc libobt.a CMakeFiles/obt.dir/obt/ddparse.c.o CMakeFiles/obt.dir/obt/display.c.o CMakeFiles/obt.dir/obt/keyboard.c.o CMakeFiles/obt.dir/obt/link.c.o CMakeFiles/obt.dir/obt/paths.c.o CMakeFiles/obt.dir/obt/prop.c.o CMakeFiles/obt.dir/obt/signal.c.o CMakeFiles/obt.dir/obt/xml.c.o CMakeFiles/obt.dir/obt/xqueue.c.o
+/usr/bin/ranlib libobt.a
