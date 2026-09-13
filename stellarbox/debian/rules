@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+# Empaquetado de Stellarbox con debhelper sobre un build CMake.
+#
+#   dh $@ --buildsystem=cmake  -> configure/puede/instala con CMake
+#   override_dh_install        -> añade xsessions, script de sesión y datos
+#
+%:
+	dh $@ --buildsystem=cmake
+
+override_dh_auto_configure:
+	dh_auto_configure -- -DCMAKE_BUILD_TYPE=Release
+
+override_dh_install:
+	dh_install
+	$(SHELL) $(CURDIR)/debian/install-tree.sh $(CURDIR)/debian/stellarbox
+
+.PHONY: override_dh_auto_configure override_dh_install

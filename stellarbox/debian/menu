@@ -1,0 +1,6 @@
+?package(stellarbox):\
+  needs="wm"\
+  section="WindowManagers"\
+  title="Stellarbox"\
+  command="/usr/bin/stellarbox"\
+  icon="/usr/share/pixmaps/stellarbox.png"

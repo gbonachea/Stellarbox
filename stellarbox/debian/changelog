@@ -1,0 +1,8 @@
+stellarbox (1.0-1) unstable; urgency=medium
+
+  * Initial Stellarbox release: fork de Openbox 3.7 reconstruido con CMake.
+  * Render vectorial (Cairo), esquinas redondeadas, HiDPI y
+    _NET_WM_OPAQUE_REGION.
+  * Empaquetado debhelper compat 13.
+
+ -- Stellarbox CMake fork <nobody@localhost>  Sat, 05 Sep 2026 00:00:00 +0000
