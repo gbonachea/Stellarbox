@@ -1,0 +1,4 @@
+[GNOME Session]
+Name=GNOME/Stellarbox fallback (Safe Mode)
+RequiredComponents=stellarbox;gnome-settings-daemon
+DesktopName=GNOME

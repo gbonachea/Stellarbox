@@ -1,0 +1,4 @@
+[GNOME Session]
+Name=GNOME/Stellarbox
+RequiredComponents=stellarbox;gnome-settings-daemon;gnome-panel;nautilus-classic;gnome-flashback-services
+DesktopName=GNOME
